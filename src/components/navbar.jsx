@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <div>
             <nav>
-                <div>
+                <div className="menu">
                     <a href=''>Log In</a>
                     <a href=''>Search</a>
                     <a href=''>Subscribe</a>
