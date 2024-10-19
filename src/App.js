@@ -14,6 +14,7 @@ function App() {
       <Navbar></Navbar>
       <Catalog></Catalog>
       <About></About>
+      <redirect></redirect>
       <Footer></Footer>
     </div>
   );
