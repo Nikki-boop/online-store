@@ -1,0 +1,15 @@
+
+.product {
+    border: 1px solid rebeccapurple;
+    border-radius: 4px;
+    margin: 12px;
+    background-color: white;
+    display: inline-block;
+    width: 250px;
+    height: 360px;
+
+}
+
+.product h3 {
+    color: blue;
+}
