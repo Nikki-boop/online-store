@@ -62,9 +62,13 @@ const catalog = [
 ]
 
 class DataService{
-    getProducts(){
+    getProducts() {
         return catalog;
-    };
+    }
+
+    getCategories() {
+        return['veggie', 'fruit'];
+    }
 }
 
 export default DataService;
