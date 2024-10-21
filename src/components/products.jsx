@@ -1,20 +1,21 @@
 import QuantityPicker from './quantityPicker';
 import './styles/product.css';
 
-function Product() {
-
+function Product(props){
     function add(){
         console.log("adding to cart");
     }
 
-
-    return (
+    return(
         <div className="product">
-            <img src="https://picsum.photos/200/250" alt="" />
-            <h3>I'm a product</h3>
-
-            <label>$total</label>
-            <label>$price</label>
+            <img src={"./img/"+props.data.image} alt="" />
+            <h3>{props.data.title}</h3>
+            <span>{"ID: "+props.data._id}</span>
+            <br></br>
+            <div className="product-price">
+                <label>$total</label>
+                <label>${props.data.price}</label>
+            </div>
 
             <QuantityPicker></QuantityPicker>
 

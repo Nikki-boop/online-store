@@ -1,3 +1,14 @@
 .catalog{
     min-height: calc(100vh - 100px);
 }
+
+.catalog h3 {
+    margin: 30px;
+}
+
+.catalog-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+
+}
