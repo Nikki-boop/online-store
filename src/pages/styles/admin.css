@@ -1,0 +1,9 @@
+.admin {
+    background-color: aqua;
+    padding: 20px 0;
+}
+
+.admin h3 {
+    color: blueviolet;
+    text-align: center;
+}

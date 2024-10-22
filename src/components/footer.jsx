@@ -5,7 +5,7 @@ function Footer(){
         <div>
             <nav>
                 <div className="bottom">
-                    <h1>Created by: Nicole Bogdaniec</h1>
+                    <h1>Online Store</h1>
                 </div>
             </nav>
         </div>
