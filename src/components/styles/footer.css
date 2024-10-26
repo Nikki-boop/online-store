@@ -1,14 +1,11 @@
-.bottom{
-    margin-bottom: 0%;
-    padding: 10px;
-    height: 70px;
-    margin-bottom: 0;
-    align-items:end ;
-    background-color: aquamarine;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    
 
+.footer{
+    background-color: rgb(182, 108, 13);
+    color: black;
 }
 
+.content{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+}

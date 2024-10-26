@@ -9,7 +9,7 @@ function About(){
     }
     
     return (
-        <div className="about">
+        <div className="about page">
             <h3>About us</h3>
 
             <div className="box">

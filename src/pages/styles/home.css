@@ -5,6 +5,11 @@
 }
 
 .home h3 {
-    color: blue;
+    color: rgb(150, 196, 233);
     margin-top: 0;
+}
+
+.home img{
+    background-position: 100%;
+
 }

@@ -25,7 +25,7 @@ function Catalog(){
     }
 
     return(
-        <div className="catalog">
+        <div className="catalog page">
             <h3>We have {products.length} new products for you!</h3>
 
             <div className="filters">
