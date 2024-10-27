@@ -7,3 +7,30 @@
     color: blueviolet;
     text-align: center;
 }
+
+.admin .parent{
+    display: flex;
+    justify-content: center;
+}
+
+.admin .parent .products{
+    width: 450px;
+    border: 1px solid salmon;
+    background-color: blanchedalmond;
+    padding: 12px;
+    margin-right: 20px;
+
+}
+
+.admin .parent .coupons{
+    width: 420px;
+    border: 1px solid salmon;
+    background-color: blanchedalmond;
+    padding: 12px;
+    margin-left: 20px;
+}
+
+.admin .controls{
+    margin-top: 12px ;
+    text-align: center;
+}

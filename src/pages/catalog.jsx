@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 function Catalog(){
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState("");
 
     useEffect(function(){
         loadCatalog();
@@ -24,23 +25,29 @@ function Catalog(){
         setCategories(cats);
     }
 
+    function applyFilter(category){
+        setSelectedCategory(category);
+    }
+
+    function clearFilter (){
+        setSelectedCategory("");
+    }
+
     return(
         <div className="catalog page">
             <h3>We have {products.length} new products for you!</h3>
 
             <div className="filters">
-                {categories.map(cat => <button className='btn btn-sm btn-outline-success'>{cat}</button> )}
+                <button onClick={clearFilter} className="btn btn-sm btn-outline-success">All</button>
+                {categories.map(cat => <button onClick={() => applyFilter(cat)} className='btn btn-sm btn-outline-success'>{cat}</button> )}
             </div>
-
-            <br></br>
 
             <div className="catalog-items">
                 {
-                    products.map((item)=>(
+                    products.filter(prod => prod.category === selectedCategory || !selectedCategory  ).map((item)=>(
                         <Product key={item._id} data={item}></Product>
                     ))
                 }
-
             </div>
         </div>
     );
