@@ -6,6 +6,7 @@ import About from './pages/about.jsx';
 import Home from './pages/home.jsx';
 import Admin from './pages/admin.jsx';
 import Cart from './pages/cart.jsx';
+import GlobalProvider from './state/globalProvider.jsx';
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,10 +14,9 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
-
 function App() {
   return (
+    <GlobalProvider>
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>
@@ -34,6 +34,7 @@ function App() {
         <Footer></Footer>
       </div>
     </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

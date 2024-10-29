@@ -4,19 +4,49 @@ import './styles/admin.css'
 function Admin (){
 
     const [coupon, setCoupon] = useState({
-        code: '',
-        discount: ''
+        code: "",
+        discount: ""
+    });
+
+    const [product, setProduct] = useState({
+        title: "",
+        price: "",
+        image: "",
+        category: "",
     });
 
     function handleCouponInput(e){
         const val =  e.target.value;
         const name = e.target.name;
 
-        console.log(name, val);
+        let copy = {...coupon};
 
-        // if (name === "code") {
+        if(name === "discount") {
+            copy.discount = val;
+        }
+        else if (name === "code" ){
+            copy.code = val;
+        }
             
-        // }
+        setCoupon(copy);
+    }
+
+    function handleProductInput(e){
+        const val =  e.target.value;
+        const name = e.target.name;
+
+        let copy = {...product};
+        copy [name] = val;
+        setProduct(copy);
+    }
+
+    function saveCoupon() {
+        console.log(coupon);
+    }
+
+    function saveProduct(){
+        console.log(product);
+
     }
 
 
@@ -29,22 +59,22 @@ function Admin (){
                     <h4>Manage Products</h4>
                     <div>
                         <label className='form-label'>Title</label>
-                        <input className='form-control' name="title" onChange={handleCouponInput}></input>
+                        <input className='form-control' name="title" onBlur={handleProductInput}></input>
                     </div>
                     <div>
                         <label className='form-label'>Category</label>
-                        <input className='form-control' name="category" onChange={handleCouponInput}></input>
+                        <input className='form-control' name="category" onBlur={handleProductInput}></input>
                     </div>
                     <div>
                         <label className='form-label'>Image</label>
-                        <input className='form-control' name="image" onChange={handleCouponInput}></input>
+                        <input className='form-control' name="image" onBlur={handleProductInput}></input>
                     </div>
                     <div>
                         <label className='form-label'>Price</label>
-                        <input className='form-control' name="price" onChange={handleCouponInput}></input>
+                        <input className='form-control' name="price" onBlur={handleProductInput}></input>
                     </div>
                     <div className="controls">
-                        <button className='btn btn-outline-dark'>Save Product</button>
+                        <button className='btn btn-outline-dark' onClick= {saveProduct}>Save Product</button>
                     </div>
                 </div>
 
@@ -61,7 +91,7 @@ function Admin (){
                     </div>
 
                     <div className="controls">
-                        <button className='btn btn-outline-dark'>Save Coupons</button>
+                        <button className='btn btn-outline-dark' onClick = {saveCoupon}>Save Coupons</button>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,14 @@
+import { useContext } from 'react';
 import './styles/navbar.css';
+import DataContext from '../state/dataContext';
 
 import { Link } from 'react-router-dom';
 
+
 function Navbar(){
+
+    const user = useContext(DataContext).user;
+
     return(
         <nav className="navbar navbar navbar-expand-lg " data-bs-theme="dark">
             <div className="container-fluid">
@@ -24,6 +30,11 @@ function Navbar(){
                        
                     </ul>
                     <div className="d-flex" role="search">
+                        <div className='btn btn-outline-light'>
+                            {user.name}
+                        </div>
+
+
                         <Link className='btn btn-outline-light' to="/cart" >View Cart</Link>
                     </div>
                 </div>
