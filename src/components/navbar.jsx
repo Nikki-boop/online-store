@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 function Navbar(){
 
     const user = useContext(DataContext).user;
+    const cart = useContext(DataContext).cart;
 
     return(
         <nav className="navbar navbar navbar-expand-lg " data-bs-theme="dark">
@@ -34,8 +35,9 @@ function Navbar(){
                             {user.name}
                         </div>
 
-
-                        <Link className='btn btn-outline-light' to="/cart" >View Cart</Link>
+                        <Link className='btn btn-outline-light' to="/cart">
+                        <span className='badge text-bg-secondary me-2'>{cart.length}</span> 
+                        View Cart</Link>
                     </div>
                 </div>
             </div>

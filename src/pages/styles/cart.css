@@ -1,0 +1,30 @@
+.cart .list{
+    margin-top: 12px;
+    padding: 20px;
+}
+
+.cart .cart-prod{
+    display: flex; 
+    align-items: center ;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(196, 151, 239);
+
+}
+
+.cart .cart-prod img{
+    height: 95px;
+}
+ .cart .cart-prod h4{
+    flex: 4;
+    text-align: center;
+ }
+
+ .cart .cart-prod label{
+    flex: 1;
+ 
+ }
+ .cart .cart-prod button{
+    width: 75px ;
+ }

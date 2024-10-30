@@ -6,10 +6,15 @@ function GlobalProvider(props) {
     const[user, setUser] = useState({name: "Nicole", id: 1234});
 
 
-    function addtoCart(){
+    function addToCart (product){
+        const copy = [...cart]
+        copy.push(product);
+        setCart(copy);
     }
 
     function removeFromCart(){
+        
+ 
     }
 
     function clearCart(){
@@ -19,7 +24,7 @@ function GlobalProvider(props) {
         <DataContext.Provider value = {{ 
             cart: cart,
             user: user,
-            addToCart: addtoCart,
+            addToCart: addToCart,
             removeFromCart: removeFromCart,
             clearCart: clearCart
         }}>
