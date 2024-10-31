@@ -2,14 +2,26 @@
 .home{
     background-color: rgb(81, 10, 146);
     padding: 20px 0;
+    position: relative;
 }
 
 .home h3 {
-    color: rgb(150, 196, 233);
+    color: black;
     margin-top: 0;
 }
 
 .home img{
-    background-position: 100%;
+    width: 100%;
+}
 
+.home .home-text {
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    /* text-align: center; */
+    position: absolute;
+    left: 425px;
+    top: 300px;
+    background-color: rgba(255, 250, 240, 0.832);
 }

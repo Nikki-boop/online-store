@@ -15,6 +15,7 @@
 
 .cart .cart-prod img{
     height: 95px;
+    width: 125px;
 }
  .cart .cart-prod h4{
     flex: 4;
