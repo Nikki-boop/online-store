@@ -1,21 +1,26 @@
 
 .product {
     border: 1px solid rebeccapurple;
-    border-radius: 5px;
+    border-radius: 40px;
     margin: 12px;
     background-color: white;
     display: inline-block;
     width: 250px;
     height: 380px;
-    /* margin-left: auto;
-    margin-right: auto; */
     vertical-align: auto;
-
 }
+
+/* .product:focus{
+    border-color: rgb(237, 11, 237);
+    box-shadow: 0 0 5px rgb(237, 11, 237);
+} */
+
 
 .product h3 {
     color: blue;
-    margin: 5px;
+    margin-top: 0%;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #00c6ff;
 
 }
 
@@ -23,7 +28,7 @@
     object-fit: cover;
     width: 100%;
     margin-bottom: 5px;
-    height:30%;
+    height:50%;
     border-radius: 5px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -33,8 +38,25 @@
 .product-price{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .product button{
     margin-top: 5px;
+}
+
+.product .personal{
+    background-color: #cc1543;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 1px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.product .personal:hover{
+    background-color: #2f0e7c;
+    transform: scale(1.1);
 }

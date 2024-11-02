@@ -10,6 +10,7 @@ function Navbar(){
     const user = useContext(DataContext).user;
     const cart = useContext(DataContext).cart;
 
+
     return(
         <nav className="navbar navbar navbar-expand-lg " data-bs-theme="dark">
             <div className="container-fluid">
@@ -34,10 +35,14 @@ function Navbar(){
                         <div className='btn btn-outline-light'>
                             {user.name}
                         </div>
-
-                        <Link className='btn btn-outline-light' to="/cart">
+                        
+                         <Link className='btn btn-outline-light' to="/cart">
                         <span className='badge text-bg-secondary me-2'>{cart.length}</span> 
-                        View Cart</Link>
+                        View Cart</Link> 
+            
+
+
+
                     </div>
                 </div>
             </div>

@@ -3,19 +3,23 @@
 }
 
 .catalog h3 {
-    margin: 30px;
-    color: darkmagenta;
+    margin: 10px;
+    color: rgb(238, 28, 238);
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px #470360;
 }
 
-.catalog-items{
-    /* display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 5px; */
 
-}
 
 .catalog .filters button{
-    margin-left: 8px;
-    color: blueviolet;
-    border-color: black;
+    background-color: #bd277e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-family: Comic Sans MS;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

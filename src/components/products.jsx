@@ -28,7 +28,7 @@ function Product(props){
             <img src={"./img/"+props.data.image} alt="" />
             <h3>{props.data.title}</h3>
             {/* <span>{"ID: "+props.data._id}</span> */}
-            <br></br>
+            {/* <br></br> */}
             <div className="product-price">
                 <label>${getTotal()} </label>
                 <label>${props.data.price}</label>
@@ -36,7 +36,7 @@ function Product(props){
 
             <QuantityPicker onChange={handleQuantity}></QuantityPicker>
 
-            <button className='btn btn-sm btn-success' onClick={add}>Add</button>
+            <button className='personal' onClick={add}>Add</button>
         </div>
     );
 }

@@ -24,4 +24,18 @@
     left: 425px;
     top: 300px;
     background-color: rgba(255, 250, 240, 0.832);
+    font-family: 'Comic Sans MS';
+}
+
+.home .personal{
+    background-color: #c41c7e;
+    color: rgb(235, 214, 240);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-family: Comic Sans MS;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

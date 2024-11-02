@@ -11,7 +11,7 @@ function Home(){
                 <h1>Welcome to affordable food</h1>
                 <h3> Faster food, only healthy!</h3>
 
-                <Link className='btn btn-success' to="/catalog">Browse our products!</Link>
+                <Link className='personal' to="/catalog">Browse our products!</Link>
             </div>
 
             {/* <img src='/img/fresh.jpg' alt=''></img> */}

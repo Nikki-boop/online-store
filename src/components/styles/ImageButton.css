@@ -1,0 +1,23 @@
+.image-button {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .image-button-img {
+    width: 100px; /* Set the size of the image button */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: rounds the corners */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  }
+  
+  .image-button-img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+  }
+  
+  .image-button-img:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduces shadow for "pressed" effect */
+  }
+  
